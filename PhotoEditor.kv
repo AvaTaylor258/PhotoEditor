@@ -1,0 +1,47 @@
+# Ava Taylor
+# make text bold
+
+Editor
+
+<Editor>:
+    BoxLayout:
+        orientation: "vertical"
+        GridLayout:
+            pos_hint: {"top":1}
+            size_hint: 1, .3
+            columns: 2
+            rows: 4
+            TextInput:
+                id: selected_image
+                hint_text: "Enter image name (e.g. image.png)"
+            Button:
+                text: "Load Image"
+                font_size: 30
+                onclick: root.change_image(selected_image.text)
+                # func works w/o having to click (???)
+            Button:
+                text: "Black and White"
+                font_size: 30
+                background_normal: "button_images/black_and_white.jpg"
+            Button:
+                text: "Inverse"
+                font_size: 30
+                background_normal: "button_images/inverse.jpeg"
+            Button:
+                text: "Line Drawing"
+                font_size: 30
+                background_normal: "button_images/line_drawing.png"
+            Button:
+                text: "Pointillism"
+                font_size: 30
+                background_normal: "button_images/pointillism.jfif"
+            Button:
+                text: "Sepia"
+                font_size: 30
+                background_normal: "button_images/sepia.jpg"
+            Button:
+                text: "Pixelate"
+                font_size: 30
+                background_normal: "button_images/pixelate.jpg"
+        Image:
+            id: image_display
