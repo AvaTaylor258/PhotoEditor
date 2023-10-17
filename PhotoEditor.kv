@@ -35,6 +35,7 @@ Editor
                 text: "Pointillism"
                 font_size: 30
                 background_normal: "button_images/pointillism.jfif"
+                on_press: root.pointillism(image_display.source)
             Button:
                 text: "Sepia"
                 font_size: 30
@@ -45,3 +46,4 @@ Editor
                 background_normal: "button_images/pixelate.jpg"
         Image:
             id: image_display
+            source: ""
