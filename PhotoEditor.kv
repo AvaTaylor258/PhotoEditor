@@ -23,14 +23,17 @@ Editor
                 text: "Black and White"
                 font_size: 30
                 background_normal: "button_images/black_and_white.jpg"
+                on_press: root.black_and_white(image_display.source)
             Button:
                 text: "Inverse"
                 font_size: 30
                 background_normal: "button_images/inverse.jpeg"
+                on_press: root.inverse(image_display.source)
             Button:
                 text: "Line Drawing"
                 font_size: 30
                 background_normal: "button_images/line_drawing.png"
+                on_press: root.line_drawing(image_display.source)
             Button:
                 text: "Pointillism"
                 font_size: 30
@@ -40,10 +43,12 @@ Editor
                 text: "Sepia"
                 font_size: 30
                 background_normal: "button_images/sepia.jpg"
+                on_press: root.sepia(image_display.source)
             Button:
                 text: "Pixelate"
                 font_size: 30
                 background_normal: "button_images/pixelate.jpg"
+                on_press: root.pixelate(image_display.source, 170, 40, 120, 110)
         Image:
             id: image_display
             source: ""
